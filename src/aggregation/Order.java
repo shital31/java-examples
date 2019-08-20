@@ -35,7 +35,6 @@ public class Order {
        User user= new User("Shital", 01,"sangvi", "7219468880");
        Order order = new Order(1,String.valueOf(System.currentTimeMillis() ),"Pears",6,63.00,10.50,user);
        order.displayData();
-
    }
 
 
