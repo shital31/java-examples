@@ -20,7 +20,7 @@ public class Details {
             }
         }
     }
-    public static void main(System args[]){
+    public static void main(String args[]){
         Details obj=new Details();
         System.out.println("String: BeginnersBook.com");
         obj.countDupChar("BeginnersBook");
