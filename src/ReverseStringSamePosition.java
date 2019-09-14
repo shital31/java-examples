@@ -5,7 +5,7 @@ public class ReverseStringSamePosition {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String : ");
         String str = sc.nextLine();
-        String[] words = str.split(" ");
+        String[] words = str.split("  ");
         String reversestring = "";
         for (int i=0;i<words.length;i++){
             String word=words[i];
