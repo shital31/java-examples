@@ -113,6 +113,7 @@ public class Form extends JFrame implements ActionListener {
         enquiry.setLayout(null);
         enquiry.setVisible(true);
         enquiry.setVisible(true);
+        enquiry.add(getName());
     }
 
 }
