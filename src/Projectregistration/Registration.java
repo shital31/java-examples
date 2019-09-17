@@ -1,5 +1,6 @@
 package Projectregistration;
 
+import javax.security.auth.Subject;
 import javax.swing.*;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
@@ -16,10 +17,18 @@ public class Registration extends JFrame implements ActionListener {
     public static void main(String[] args) {
         Form form = new Form();
         JFrame frame = new JFrame();
-        JMenu Enquiry,Admission;
+        JMenu Enquiry,Admission,Subject;
         JMenuBar mb = new JMenuBar();
         Admission = new JMenu("Admission");
         Enquiry = new JMenu("Enquiry");
+        Subject = new JMenu("Subject");
+        JMenuItem java=new JMenuItem("Java");
+        JMenuItem spring= new JMenuItem("Springboot");
+        JMenuItem android = new JMenuItem("Android");
+        Subject.add(java);
+        Subject.add(spring);
+        Subject.add(android);
+
         Enquiry.addMenuListener(new MenuListener() {
             @Override
             public void menuSelected(MenuEvent e) {
@@ -41,6 +50,7 @@ public class Registration extends JFrame implements ActionListener {
         });
         mb.add(Enquiry);
         mb.add(Admission);
+        mb.add(Subject);
         frame.add(mb);
         frame.setJMenuBar(mb);
         frame.setSize(500,600);
